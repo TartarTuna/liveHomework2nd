@@ -1,0 +1,274 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/**************/
+*{
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+/* header */
+header {
+    margin-bottom: 64px;
+    background-image: url(/images/banner.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 960px;
+    width: 100%;
+}
+
+.headerWrap {
+    padding: 356px 0 256px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.bannerText-sm {
+    color: #ffffff;
+    font-size: 24px;
+    line-height: 42px;
+    font-weight: bold;
+}
+
+.heroName {
+    margin-bottom: 32px;
+    color: #ffffff;
+    font-size: 80px;
+    line-height: 94px;
+    font-weight: 900;
+}
+
+.bannerText {
+    margin-bottom: 64px;
+}
+
+.iconContent {
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+/* about */
+.about {
+    margin-bottom: 56px;
+}
+
+.subtitle {
+    margin-bottom: 40px;
+    font-size: 64px;
+    line-height: 75px;
+    font-weight: 500;
+}
+
+.aboutWrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.avatar {
+    margin-bottom: 40px;
+}
+
+.aboutContent {
+    padding-bottom: 32px;
+    text-align: center;
+    font-size: 24px;
+    line-height: 42px;
+    font-weight: 700;
+}
+
+.workExperience {
+    width: 384px;
+    border-top: 1px solid #000;
+    padding-top: 34px;
+    text-align: center;
+    font-size: 24px;
+    line-height: 42px;
+    font-weight: 700;
+}
+
+.experienceItem {
+    position: relative;
+}
+
+.experienceItem::before {
+    content: "";
+    position: absolute;
+    width: 22px;
+    height: 22px;
+    background-color: #891818;
+    border-radius: 50%;
+    top: 10px;
+    margin-left: -38px;
+}
+
+/* brand */
+.brand {
+    background-color: #000000;
+    border: 1px solid #707070;  
+    margin-bottom: 64px;
+}
+
+.brandWrap {
+    padding-top: 56px;
+    padding-bottom: 160px;
+    text-align: center;
+}
+
+
+.title {
+    color: #fff;
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 84px;
+    margin-bottom: 12px;
+}
+
+.slogan {
+    color: #fff;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 42px;
+    margin-bottom: 31px;
+}
+
+.brandText {
+    margin-bottom: 48px;
+    color: #fff;
+}
+
+.textItem {
+    font-size: 20px;
+    line-height: 42px;
+}
+
+.imgUp {
+    margin-bottom: 40px;
+    width: 792px;
+    height: 416px;
+}
+
+.productFlex {
+    display: flex;
+    justify-content: space-between;
+}
+
+.imgDown {
+    width: 588px;
+    height: 416px;
+}
+
+
+/* other works */
+.worksWrap {
+    text-align: center;
+}
+
+.otherWorks {
+    padding-bottom: 104px;
+    background-image: url(/images/photo-1561291386-5be50364cfb5.png);
+    background-position: center bottom;
+    background-repeat: no-repeat;
+}
+
+.workTitle {
+    font-size: 64px;
+    line-height: 75px;
+    font-weight: 500;
+    margin-bottom: 24px;
+}
+
+.workYear {
+    font-size: 20px;
+    line-height: 42px;
+    color:#fff;
+}
+
+.workYearBlack {
+    margin-bottom: 48px;
+    color: #000;
+}
+
+.worksflex {
+    margin-bottom: 56px;
+    width: 100;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* footer */
+footer {
+    padding: 64px 0 80px;
+    background-color: #000;
+    text-align: center;
+    color: #fff;
+}
+
+footer h2 {
+    margin-bottom: 16px;
+    font-size: 64px;
+    line-height: 75px;
+    font-weight: 700;
+}
+
+footer p {
+    font-size: 24px;
+    line-height: 36px;
+    font-weight: 500;
+}
+
+
